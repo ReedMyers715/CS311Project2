@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Wikipedia Revision Checker</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header class="site-header">
+    <h1>Wikipedia Revision Checker</h1>
+    <p>See who edited a Wikipedia article most recently.</p>
+  </header>
+
+  <main>
+    <div class="controls">
+      <label for="article-input">Article title</label>
+      <input type="text" id="article-input" value="Zappa" placeholder="e.g. Zappa, Albert Einstein">
+      <button id="fetch-btn" type="button">Get revisions</button>
+    </div>
+
+    <div id="status" class="status" role="status" aria-live="polite"></div>
+    <div id="results" class="grid"></div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
